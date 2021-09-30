@@ -1,0 +1,61 @@
+﻿prince_male_minervan_kingdom = {
+	type = character
+	gender = male
+	special = ruler_child
+	tier = kingdom
+	priority = 41
+	faiths = { minervan }
+	titles = { k_minervan }
+	top_liege = no
+}
+prince_female_minervan_kingdom = {
+	type = character
+	gender = female
+	special = ruler_child
+	tier = kingdom
+	priority = 41
+	faiths = { minervan }
+	titles = { k_minervan }
+	top_liege = no
+}
+queen_minervan_kingdom = {
+	type = character
+	gender = female
+	special = holder
+	tier = kingdom
+	priority = 60
+	titles = { k_minervan }
+	top_liege = no
+}
+# prince_male_minervan_empire = {
+# 	type = character
+# 	gender = male
+# 	special = holder
+# 	priority = 60
+# 	titles = { k_minervan }
+# 	top_liege = no
+# }
+# prince_female_minervan_empire = {
+# 	type = character
+# 	gender = female
+# 	special = holder
+# 	priority = 60
+# 	titles = { k_minervan }
+# 	top_liege = no
+# }
+# queen_minervan_empire = {
+# 	type = character
+# 	gender = female
+# 	special = holder
+# 	priority = 60
+# 	titles = { k_minervan }
+# 	top_liege = no
+# }
+
+
+	prince_male_minervan_kingdom:0 "Princeps"
+	prince_female_minervan_kingdom:0 "Principissa"
+	queen_minervan_kingdom:0 "Principissa"
+	prince_male_minervan_empire:0 "Caesar"
+	prince_female_minervan_empire:0 "Caesarissa"
+	queen_minervan_empire:0 "Caesarissa"

@@ -1,0 +1,4 @@
+﻿chancellor_integrate_title_progress_gain = {
+	add = diplomacy
+	multiply = 0.2
+}

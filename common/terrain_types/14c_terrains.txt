@@ -1,0 +1,44 @@
+﻿forest = {
+	color = hsv { 0.3 0.75 0.7 } #50 255 25
+	
+	province_modifier = {
+		supply_limit_mult = -0.1
+		build_gold_cost = -0.1
+		build_prestige_cost = -0.1
+		build_speed = -0.1
+	}
+	
+	defender_combat_effects = {
+		name = combat_forest
+		image = defender_forest
+		advantage = 3
+	}
+	
+	movement_speed = 0.8
+	combat_width = 0.9
+
+	audio_parameter = 4.0
+}
+
+taiga = {
+	color = hsv { 0.4 0.7 0.6 } #0 90 0
+	
+	province_modifier = {
+		supply_limit_mult = -0.2
+		development_growth_factor = -0.05
+		build_gold_cost = -0.1
+		build_prestige_cost = -0.1
+		build_speed = -0.1
+	}
+	
+	defender_combat_effects = {
+		name = combat_taiga
+		image = defender_taiga
+		advantage = 4
+	}
+	
+	movement_speed = 0.8
+	combat_width = 0.8
+	
+	audio_parameter = 9.0
+}

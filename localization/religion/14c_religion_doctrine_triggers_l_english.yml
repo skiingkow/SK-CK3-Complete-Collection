@@ -1,0 +1,3 @@
+﻿l_english:
+
+ INCOMPATIBLE_TENET_TRIGGER:1 "Incompatible with a [core_tenet|E] [GetFaithDoctrine('').GetName( GetPlayer.GetFaith )]"

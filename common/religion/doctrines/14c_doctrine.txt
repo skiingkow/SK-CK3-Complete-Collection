@@ -1,0 +1,331 @@
+#relgion that thinks albino and giants are better and come from cousin marriage and mass producing kids,and that focuses on learning and lots of warrior clergy
+        ###see new_core_tenets
+#make giant and albino virtue doctrine, combine with close marriage doctrine, makes lust and rackish virtues, 10% fertility for all followers
+        ###see new_core_tenets
+#make studious doctrine, that combines alexadrian with literalism
+        ###see new_core_tenets
+#combine esoteric with aniconism
+        ###see new_core_tenets
+#modify recruitment clergy to not cut into taxes and give all insulary bonus power, levies and faith hostility advantage
+
+doctrine_clerical_function = {
+	group = "clergy"
+	doctrine_clerical_function_taxation = {
+		clergy_modifier = {
+			monthly_county_control_change_add_even_if_baron = 0.2
+			monthly_county_control_change_factor_even_if_baron = 0.3
+		}
+		piety_cost = {
+			value = faith_doctrine_cost_low
+			if = {
+				limit = { has_doctrine = doctrine_clerical_function_taxation }
+				multiply = faith_unchanged_doctrine_cost_mult
+			}
+		}
+	}
+	doctrine_clerical_function_alms_and_pacification = {
+		character_modifier = {
+			county_opinion_add_even_if_baron = 15
+			domain_tax_mult_even_if_baron = 0.05
+		}
+		piety_cost = {
+			value = faith_doctrine_cost_low
+			if = {
+				limit = { has_doctrine = doctrine_clerical_function_alms_and_pacification }
+				multiply = faith_unchanged_doctrine_cost_mult
+			}
+		}
+	}
+	doctrine_clerical_function_recruitment = {
+		character_modifier = {
+			levy_reinforcement_rate_same_faith_even_if_baron = 0.2
+			prowess = 3
+            tolerance_advantage_mod = 2
+		}
+		parameters = {
+			clergy_can_fight = yes
+		}
+		piety_cost = {
+			value = faith_doctrine_cost_low
+			if = {
+				limit = { has_doctrine = doctrine_clerical_function_recruitment }
+				multiply = faith_unchanged_doctrine_cost_mult
+			}
+		}
+	}
+}
+
+
+doctrine_theocracy = {
+	group = "main_group"
+	doctrine_theocracy_temporal = {
+		piety_cost = {
+			value = faith_doctrine_cost_mid
+			if = {
+				limit = { has_doctrine = doctrine_theocracy_temporal }
+				multiply = faith_unchanged_doctrine_cost_mult
+			}
+			else_if = {
+				limit = { has_doctrine = doctrine_theocracy_lay_clergy }
+				multiply = faith_changed_doctrine_cost_mult_two_step
+			}
+		}
+		
+		parameters = {
+			theocracy_temple_lease = yes
+		}
+	}
+	doctrine_theocracy_lay_clergy = {
+		piety_cost = {
+			value = faith_doctrine_cost_mid
+			if = {
+				limit = { has_doctrine = doctrine_theocracy_lay_clergy }
+				multiply = faith_unchanged_doctrine_cost_mult
+			}
+			else_if = {
+				limit = { has_doctrine = doctrine_theocracy_temporal }
+				multiply = faith_changed_doctrine_cost_mult_two_step
+			}
+		}
+
+		parameters = {
+			theocracy_temple_ownership = yes
+			lay_clergy = yes
+			allowed_holding_type_church_holding = yes
+		}
+	}
+}
+
+
+special_tolerance = {
+	group = "main_group"
+	
+	is_available_on_create = {
+		always = no # Goes away when creating a new Faith
+	}
+	
+	special_doctrine_ecumenical_christian = {
+		parameters = {
+			hostility_override_special_doctrine_ecumenical_christian = 1
+		}
+	}
+}
+
+doctrine_slavic_identity = {
+	group = "main_group"
+
+	is_available_on_create = {
+		always = no # Goes away when creating a new Faith
+	}
+	special_doctrine_slavic_christian = {
+		parameters = {
+			hostility_override_special_doctrine_slavic_christian = 0
+		}
+	}
+}
+
+doctrine_marriage_type = {
+	group = "marriage"
+	doctrine_monogamy = {
+		piety_cost = {
+			value = faith_doctrine_cost_mid
+			if = {
+				limit = { has_doctrine = doctrine_monogamy }
+				multiply = faith_unchanged_doctrine_cost_mult
+			}
+		}
+		parameters = {
+			number_of_spouses = 1
+			marriage_event = yes
+		}
+	}
+
+	doctrine_polygamy = {
+		piety_cost = {
+			value = faith_doctrine_cost_mid
+			if = {
+				limit = { has_doctrine = doctrine_polygamy }
+				multiply = faith_unchanged_doctrine_cost_mult
+			}
+		}
+		parameters = {
+			number_of_spouses = 4
+			spouse_piety_loss = yes
+			no_unfaithfulness_penalty_active = yes
+		}
+	}
+
+	doctrine_concubines = {
+		piety_cost = {
+			value = faith_doctrine_cost_mid
+			if = {
+				limit = { has_doctrine = doctrine_concubines }
+				multiply = faith_unchanged_doctrine_cost_mult
+			}
+		}
+		parameters = {
+			number_of_spouses = 1
+			number_of_consorts = 3
+		}
+	}
+}
+
+
+doctrine_adultery_men = {
+	group = "crimes"
+	doctrine_adultery_men_crime = {
+		piety_cost = {
+			value = faith_doctrine_cost_mid
+			if = {
+				limit = { has_doctrine = doctrine_adultery_men_crime }
+				multiply = faith_unchanged_doctrine_cost_mult
+			}
+			else_if = {
+				limit = { has_doctrine = doctrine_adultery_men_accepted }
+				multiply = faith_changed_doctrine_cost_mult_two_step
+			}
+		}
+		parameters = {
+			adultery_male_crime = yes
+		}
+	}
+	doctrine_adultery_men_shunned = {
+		piety_cost = {
+			value = faith_doctrine_cost_mid
+			if = {
+				limit = { has_doctrine = doctrine_adultery_men_shunned }
+				multiply = faith_unchanged_doctrine_cost_mult
+			}
+		}
+		parameters = {
+			adultery_male_shunned = yes
+		}
+	}
+	doctrine_adultery_men_accepted = {
+		piety_cost = {
+			value = faith_doctrine_cost_mid
+			if = {
+				limit = { has_doctrine = doctrine_adultery_men_accepted }
+				multiply = faith_unchanged_doctrine_cost_mult
+			}
+			else_if = {
+				limit = { has_doctrine = doctrine_adultery_men_crime }
+				multiply = faith_changed_doctrine_cost_mult_two_step
+			}
+		}
+		parameters = {
+			adultery_male_accepted = yes
+			no_unfaithfulness_penalty_active = yes
+
+		}
+	}
+}
+
+doctrine_adultery_women = {
+	group = "crimes"
+	doctrine_adultery_women_crime = {
+		piety_cost = {
+			value = faith_doctrine_cost_mid
+			if = {
+				limit = { has_doctrine = doctrine_adultery_women_crime }
+				multiply = faith_unchanged_doctrine_cost_mult
+			}
+			else_if = {
+				limit = { has_doctrine = doctrine_adultery_women_accepted }
+				multiply = faith_changed_doctrine_cost_mult_two_step
+			}
+		}
+		parameters = {
+			adultery_female_crime = yes
+		}
+	}
+	doctrine_adultery_women_shunned = {
+		piety_cost = {
+			value = faith_doctrine_cost_mid
+			if = {
+				limit = { has_doctrine = doctrine_adultery_women_shunned }
+				multiply = faith_unchanged_doctrine_cost_mult
+			}
+		}
+		parameters = {
+			adultery_female_shunned = yes
+		}
+	}
+	doctrine_adultery_women_accepted = {
+		piety_cost = {
+			value = faith_doctrine_cost_mid
+			if = {
+				limit = { has_doctrine = doctrine_adultery_women_accepted }
+				multiply = faith_unchanged_doctrine_cost_mult
+			}
+			else_if = {
+				limit = { has_doctrine = doctrine_adultery_women_crime }
+				multiply = faith_changed_doctrine_cost_mult_two_step
+			}
+		}
+		parameters = {
+			adultery_female_accepted = yes
+			no_unfaithfulness_penalty_active = yes
+
+		}
+	}
+}
+
+
+# doctrine_head_of_faith = {
+# 	group = "main_group"
+
+# 	doctrine_no_head = {
+# 		visible = no
+# 		piety_cost = {
+# 			value = faith_doctrine_cost_mid
+# 			if = {
+# 				limit = { has_doctrine = doctrine_no_head }
+# 				multiply = faith_unchanged_doctrine_cost_mult
+# 			}
+# 		}
+# 		parameters = {
+# 			no_head_of_faith = yes
+# 			minimum_fervor = 25
+# 		}
+# 	}
+# 	doctrine_spiritual_head = {
+# 		visible = no
+# 		piety_cost = {
+# 			value = faith_doctrine_cost_high
+# 			if = {
+# 				limit = { has_doctrine = doctrine_spiritual_head }
+# 				multiply = faith_unchanged_doctrine_cost_mult
+# 			}
+# 		}
+# 		parameters = {
+# 			spiritual_head_of_faith = yes
+# 			spiritual_head_of_faith_claims = yes
+# 			spiritual_head_of_faith_gold = yes
+# 		}
+# 	}
+# 	doctrine_temporal_head = {
+# 		visible = no
+# 		piety_cost = {
+# 			value = faith_doctrine_cost_massive
+# 			if = {
+# 				limit = { has_doctrine = doctrine_temporal_head }
+# 				multiply = faith_unchanged_doctrine_cost_mult
+# 			}
+# 		}
+# 		can_pick = {
+# 			custom_description = {
+# 				text = incompatible_doctrine_spiritual_appointment_temporal_trigger
+# 				NOR = {
+# 					flag:doctrine_clerical_succession_spiritual_appointment = { is_in_list = selected_doctrines }
+# 					flag:doctrine_clerical_succession_spiritual_fixed_appointment = { is_in_list = selected_doctrines }
+# 				}
+# 			}
+# 		}
+
+# 		parameters = {
+# 			temporal_head_of_faith = yes
+# 			temporal_head_of_faith_directed_holy_wars = yes
+# 		}
+# 	}
+# }

@@ -1,0 +1,187 @@
+﻿
+### ROAD MOD
+
+road_01 = {
+	construction_time = 365
+
+	can_construct_potential = {
+		# building_requirement_tribal = yes
+	# 	scope:holder = county.holder
+	# 	scope:root = county
+	# 	# ^checks to see if the owner of the county owns the province
+	# 	# add a check to make sure the only barony that can build this is the capital of the county
+	# 	# NOT ={ #idea is that if it is a barony aka 3 building location, but probably will just block it from all baronies; test county_capital, county.capital
+	# 	# 	scope:root = barony
+	# 	# }
+	}
+
+	cost_gold = 0
+
+	# duchy_capital_county_modifier = {
+	# 	build_speed = -0.05
+	# 	# tax_mult = 0
+	# 	movement_speed = 0.05
+	# 	# supply_limit_mult = 0
+	# }
+	province_modifier = {
+		# monthly_income = 0
+		build_speed = -0.05
+		# tax_mult = 0
+		movement_speed = 0.05
+		# supply_limit_mult = 0
+	}
+
+	next_building = road_02
+
+	type = regular
+
+	type_icon = "icon_structure_road.dds"
+
+	ai_value = {
+		base = 50
+		modifier = {
+			factor = 2
+			scope:holder.capital_province = this
+		}
+	}
+}
+
+road_02 = {
+	construction_time = standard_construction_time
+
+	can_construct_potential = {
+		building_requirement_tribal = no
+		# scope:holder = county.holder
+
+	}
+
+	can_construct_showing_failures_only = {
+		
+		culture = {
+			has_innovation = innovation_manorialism
+		}
+	}
+
+	cost_gold = 125
+
+	# duchy_capital_county_modifier = {
+	# 	build_speed = -0.1
+	# 	tax_mult = 0.25
+	# 	movement_speed = 0.1
+	# 	supply_limit_mult = 0.25
+	# }
+
+	province_modifier = {
+		monthly_income = -0.4
+		build_speed = -0.1
+		tax_mult = 0.25
+		movement_speed = 0.1
+		supply_limit_mult = 0.25
+	}
+
+	next_building = road_03
+
+	type = regular
+
+	type_icon = "icon_structure_road.dds"
+
+	ai_value = {
+		base = 20
+		modifier = {
+			factor = 2
+			scope:holder.capital_province = this
+		}
+	}
+}
+
+road_03 = {
+	construction_time = slow_construction_time
+
+	can_construct_potential = {
+		building_requirement_tribal = no
+		# scope:holder = county.holder
+
+	}
+
+	can_construct_showing_failures_only = {
+		
+		culture = {
+			has_innovation = innovation_windmills
+		}
+	}
+
+	cost_gold = 250
+
+	# duchy_capital_county_modifier = {
+	# 	build_speed = -0.15
+	# 	tax_mult = 0.5
+	# 	movement_speed = 0.2
+	# 	supply_limit_mult = 0.5
+	# }
+	province_modifier = {
+		monthly_income = -0.7
+		build_speed = -0.15
+		tax_mult = 0.5
+		movement_speed = 0.2
+		supply_limit_mult = 0.5
+	}
+
+	next_building = road_04
+
+	type = regular
+
+	type_icon = "icon_structure_road.dds"
+
+	ai_value = {
+		base = 20
+		modifier = {
+			factor = 2
+			scope:holder.capital_province = this
+		}
+	}
+}
+
+road_04 = {
+	construction_time = very_slow_construction_time
+
+	can_construct_potential = {
+		building_requirement_tribal = no
+		# scope:holder = county.holder
+
+	}
+
+	can_construct_showing_failures_only = {
+		
+		culture = {
+			has_innovation = innovation_cranes
+		}
+	}
+
+	cost_gold = 500
+
+	# duchy_capital_county_modifier = {
+	# 	build_speed = -0.25
+	# 	tax_mult = 0.75
+	# 	movement_speed = 0.3
+	# 	supply_limit_mult = 0.75
+	# }
+	province_modifier = {
+		monthly_income = -1
+		build_speed = -0.25
+		tax_mult = 0.75
+		movement_speed = 0.3
+		supply_limit_mult = 0.75
+	}
+
+	type = regular
+
+	type_icon = "icon_structure_road.dds"
+
+	ai_value = {
+		base = 20
+		modifier = {
+			factor = 2
+			scope:holder.capital_province = this
+		}
+	}
+}

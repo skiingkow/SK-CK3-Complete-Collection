@@ -1,0 +1,74 @@
+﻿@correct_culture_primary_score = 100
+@better_than_the_alternatives_score = 50
+@always_primary_score = 1000
+
+# EMPIRES
+
+k_slavic_pope = {
+	color = { 112 229 255 }
+	color2 = { 255 255 255 }
+	definite_form = yes
+	ruler_uses_title_name = no
+	landless = yes
+	
+	capital = c_sieradzka
+	
+	ai_primary_priority = {
+		add = @always_primary_score
+	}
+
+	destroy_if_invalid_heir = yes
+	no_automatic_claims = yes
+	always_follows_primary_heir = yes
+	de_jure_drift_disabled = yes
+
+	male_names = { Aleksander Benedykt Bolesław Cezary Casimir Cyryl Eugeniusz Leo Leszko Grzegorz Hanusz Honorat Lucjan Mateusz Marcin Mikołaj Piast Stefan Stanisław Tadeusz Wiktor Wiesław }
+}
+
+k_jadwigan_pope = {
+	color = { 109 70 74 }
+	color2 = { 255 255 255 }
+	definite_form = yes
+	ruler_uses_title_name = no
+	landless = yes
+	
+	capital = c_poznanska
+	
+	ai_primary_priority = {
+		add = @always_primary_score
+	}
+
+	destroy_if_invalid_heir = yes
+	no_automatic_claims = yes
+	always_follows_primary_heir = yes
+	de_jure_drift_disabled = yes
+
+	male_names = { Aleksander Benedykt Bolesław Cezary Casimir Cyryl Eugeniusz Leo Leszko Grzegorz Hanusz Honorat Lucjan Mateusz Marcin Mikołaj Piast Stefan Stanisław Tadeusz Wiktor Wiesław }
+}
+
+k_minervan = {
+	color = { 84 44 133 }
+	color2 = { 255 215 0 }
+	landless = yes
+	definite_form = yes
+	ruler_uses_title_name = no
+	
+	capital = c_thessalia # Olympus
+	
+	ai_primary_priority = {
+		add = @always_primary_score
+	}
+
+	no_automatic_claims = yes
+	always_follows_primary_heir = yes
+	destroy_if_invalid_heir = yes
+	de_jure_drift_disabled = yes
+}
+
+e_india = {		# Titular, created by special decision only if entire India is united
+	color = { 255 110 0 }
+	ruler_uses_title_name = no
+	ai_primary_priority = {
+		add = @always_primary_score
+	}
+}

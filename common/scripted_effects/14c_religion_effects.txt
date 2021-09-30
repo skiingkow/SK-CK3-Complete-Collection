@@ -1,0 +1,316 @@
+﻿set_bhakti_effect = {
+	# Remove any previous personal god relation.
+	## HINDUISM
+	if = {
+		limit = { religion = religion:hinduism_religion }
+		if = {	
+			limit = {
+				has_character_modifier = bhakti_hinduism_ganga
+			}
+			remove_character_modifier = bhakti_hinduism_ganga
+			add_piety = massive_piety_loss
+		}
+		else_if = {	
+			limit = {
+				has_character_modifier = bhakti_hinduism_saraswati
+			}
+			remove_character_modifier = bhakti_hinduism_saraswati
+			add_piety = massive_piety_loss
+		}
+		else_if = {	
+			limit = {
+				has_character_modifier = bhakti_hinduism_kali
+			}
+			remove_character_modifier = bhakti_hinduism_kali
+			add_piety = massive_piety_loss
+		}
+		else_if = {	
+			limit = {
+				has_character_modifier = bhakti_hinduism_kubera
+			}
+			remove_character_modifier = bhakti_hinduism_kubera
+			add_piety = massive_piety_loss
+		}
+		else_if = {	
+			limit = {
+				has_character_modifier = bhakti_vaishnavism_lakishmi
+			}
+			remove_character_modifier = bhakti_vaishnavism_lakishmi
+			add_piety = massive_piety_loss
+		}
+		else_if = {	
+			limit = {
+				has_character_modifier = bhakti_vaishnavism_jagganath
+			}
+			remove_character_modifier = bhakti_vaishnavism_jagganath
+			add_piety = massive_piety_loss
+		}
+		else_if = {	
+			limit = {
+				has_character_modifier = bhakti_vaishnavism_jagganath
+			}
+			remove_character_modifier = bhakti_vaishnavism_jagganath
+			add_piety = massive_piety_loss
+		}
+		else_if = {	
+			limit = {
+				has_character_modifier = bhakti_vaishnavism_hayagriva
+			}
+			remove_character_modifier = bhakti_vaishnavism_hayagriva
+			add_piety = massive_piety_loss
+		}
+		else_if = {	
+			limit = {
+				has_character_modifier = bhakti_shaivism_parvati
+			}
+			remove_character_modifier = bhakti_shaivism_parvati
+			add_piety = massive_piety_loss
+		}
+		else_if = {	
+			limit = {
+				has_character_modifier = bhakti_shaivism_virabhadra
+			}
+			remove_character_modifier = bhakti_shaivism_virabhadra
+			add_piety = massive_piety_loss
+		}
+		else_if = {	
+			limit = {
+				has_character_modifier = bhakti_shaivism_munishwarar
+			}
+			remove_character_modifier = bhakti_shaivism_munishwarar
+			add_piety = massive_piety_loss
+		}
+		else_if = {	
+			limit = {
+				has_character_modifier = bhakti_shaivism_dakshinamoorthy
+			}
+			remove_character_modifier = bhakti_shaivism_dakshinamoorthy
+			add_piety = massive_piety_loss
+		}
+		else_if = {	
+			limit = {
+				has_character_modifier = bhakti_smartism_ganesha
+			}
+			remove_character_modifier = bhakti_smartism_ganesha
+			add_piety = massive_piety_loss
+		}
+		else_if = {	
+			limit = {
+				has_character_modifier = bhakti_smartism_vishnu
+			}
+			remove_character_modifier = bhakti_smartism_vishnu
+			add_piety = massive_piety_loss
+		}
+		else_if = {	
+			limit = {
+				has_character_modifier = bhakti_smartism_shiva
+			}
+			remove_character_modifier = bhakti_smartism_shiva
+			add_piety = massive_piety_loss
+		}
+	}
+	# GERMANIC
+	else_if = {
+		limit = { religion = religion:germanic_religion }
+		if = {	
+			limit = {
+				has_character_modifier = bhakti_germanic_generic_odin
+			}
+			remove_character_modifier = bhakti_germanic_generic_odin
+			add_piety = massive_piety_loss
+		}
+		else_if = {	
+			limit = {
+				has_character_modifier = bhakti_germanic_not_danish_ullr
+			}
+			remove_character_modifier = bhakti_germanic_not_danish_ullr
+			add_piety = massive_piety_loss
+		}
+		else_if = {	
+			limit = {
+				has_character_modifier = bhakti_germanic_danish_tyr
+			}
+			remove_character_modifier = bhakti_germanic_danish_tyr
+			add_piety = massive_piety_loss
+		}
+		else_if = {	
+			limit = {
+				has_character_modifier = bhakti_germanic_generic_thor
+			}
+			remove_character_modifier = bhakti_germanic_generic_thor
+			add_piety = massive_piety_loss
+		}
+		else_if = {	
+			limit = {
+				has_character_modifier = bhakti_germanic_generic_freyr
+			}
+			remove_character_modifier = bhakti_germanic_generic_freyr
+			add_piety = massive_piety_loss
+		}
+	}
+	# MINERVAN
+	else_if = {
+		limit = { faith = faith:minervan }
+		if = {	
+			limit = {
+				has_character_modifier = bhakti_minervan_generic_zeus
+			}
+			remove_character_modifier = bhakti_minervan_generic_zeus
+			add_piety = medium_piety_loss
+		}
+		else_if = {	
+			limit = {
+				has_character_modifier = bhakti_minervan_generic_poseidon
+			}
+			remove_character_modifier = bhakti_minervan_generic_poseidon
+			add_piety = medium_piety_loss
+		}
+		else_if = {	
+			limit = {
+				has_character_modifier = bhakti_minervan_generic_hades
+			}
+			remove_character_modifier = bhakti_minervan_generic_hades
+			add_piety = medium_piety_loss
+		}
+		else_if = {	
+			limit = {
+				has_character_modifier = bhakti_minervan_generic_minerva
+			}
+			remove_character_modifier = bhakti_minervan_generic_minerva
+			add_piety = medium_piety_loss
+		}
+		else_if = {	
+			limit = {
+				has_character_modifier = bhakti_minervan_generic_bacchus
+			}
+			remove_character_modifier = bhakti_minervan_generic_bacchus
+			add_piety = medium_piety_loss
+		}
+		else_if = {	
+			limit = {
+				has_character_modifier = bhakti_minervan_generic_mars
+			}
+			remove_character_modifier = bhakti_minervan_generic_mars
+			add_piety = medium_piety_loss
+		}
+
+	}
+	else = {
+		# If no current bhakti, cost is reduced.
+		add_piety = medium_piety_loss
+	}
+
+	add_character_modifier = $BHAKTI$
+}
+
+
+# Extra reward effects for specific tenets
+pilgrimage_additional_reward_effect = {
+	# Armed Pilgrimages
+	if = {
+		limit = { faith = { has_doctrine = tenet_armed_pilgrimages } }
+		custom_description_no_bullet = {
+			text = pilgrimage_because_i_have_armed_pilgrimages
+		}
+		add_character_modifier = {
+			modifier = pilgrimage_armed_pilgrimages_modifier
+			years = 10
+		}
+	}
+	# Mendicant Preachers
+	if = {
+		limit = { faith = { has_doctrine = tenet_mendicant_preachers } }
+		custom_description_no_bullet = {
+			text = pilgrimage_because_i_have_tenet_mendicant_preachers
+		}
+		add_character_modifier = {
+			modifier = pilgrimage_mendicant_preachers_modifier
+			years = 10
+		}
+	}
+	# Pentarchy
+	if = {
+		limit = { 
+			faith = { 
+				OR = {
+					has_doctrine = tenet_pentarchy 
+					has_doctrine = tenet_ecclesiarchy_identity
+				}
+			}
+		}
+		custom_description_no_bullet = {
+			text = pilgrimage_because_i_have_tenet_pentarchy
+		}
+		add_character_modifier = {
+			modifier = pilgrimage_pentarchy_modifier
+			years = 10
+		}
+	}
+	# Struggle and Submission
+	if = {
+		limit = { faith = { has_doctrine = tenet_struggle_submission } }
+		custom_description_no_bullet = {
+			text = pilgrimage_because_i_have_tenet_struggle_submission
+		}
+		add_character_modifier = {
+			modifier = pilgrimage_struggle_submission_modifier
+			years = 10
+		}
+	}
+	# Ancestor Worship
+	if = {
+		limit = { 
+			faith = { 
+				OR = {
+					has_doctrine = tenet_ancestor_worship 
+					has_doctrine = tenet_hearth_and_home
+				}
+			}
+		}
+		custom_description_no_bullet = {
+			text = pilgrimage_because_i_have_tenet_ancestor_worship
+		}
+		add_character_modifier = {
+			modifier = pilgrimage_ancestor_worship_modifier
+			years = 10
+		}
+	}
+	# Esotericism
+	if = {
+		limit = {
+			faith = { 
+				OR = {
+					has_doctrine = tenet_esotericism 
+					has_doctrine = tenet_esoteric_aniconism
+				}
+			}
+			NOT = { has_trait = mystic_3 }
+		}
+		custom_description_no_bullet = {
+			text = pilgrimage_because_i_have_tenet_esotericism
+			subject = root
+		}
+		random_list = {
+			desc = pilgrimage_learn_from_the_bishops
+			50 = {
+				desc = pilgrimage_learn_from_the_bishops_success
+				compare_modifier = {
+					value = learning
+					multiplier = 5
+				}
+				change_trait_rank = {
+					trait = lifestyle_mystic
+					rank = 1
+					max = 3
+				}
+			}
+			50 = {
+				desc = pilgrimage_learn_from_the_bishops_failure
+				send_interface_toast = {
+					title = pilgrimage_learn_from_the_bishops_failure
+					left_icon = root
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,46 @@
+﻿l_english:
+
+
+#Jadgwian
+ holy_site_wroclaw_name:0 "Wroclaw"
+ holy_site_wroclaw_effect_name:0 "From [holy_site|E] #weak ($holy_site_wroclaw_name$)#!"
+ holy_site_poznan_name:0 "Poznan"
+ holy_site_poznan_effect_name:0 "From [holy_site|E] #weak ($holy_site_poznan_name$)#!"
+ holy_site_plock_name:0 "Plock"
+ holy_site_plock_effect_name:0 "From [holy_site|E] #weak ($holy_site_plock_name$)#!"
+
+ 
+
+#Shared
+ holy_site_krakow_name:0 "Krakow"
+ holy_site_krakow_effect_name:0 "From [holy_site|E] #weak ($holy_site_krakow_name$)#!"
+ 
+
+#Slavic Catholic
+ holy_site_prague_name:0 "Prague"
+ holy_site_prague_effect_name:0 "From [holy_site|E] #weak ($holy_site_prague_name$)#!"
+ holy_site_novgorod_name:0 "Novgorod"
+ holy_site_novgorod_effect_name:0 "From [holy_site|E] #weak ($holy_site_novgorod_name$)#!"
+ holy_site_szczecin_name:0 "Szczecin"
+ holy_site_szczecin_effect_name:0 "From [holy_site|E] #weak ($holy_site_szczecin_name$)#!"
+ holy_site_olomouc_name:0 "Olomouc"
+ holy_site_olomouc_effect_name:0 "From [holy_site|E] #weak ($holy_site_olomouc_name$)#!"
+ holy_site_volodymyr_name:0 "Volodymyr"
+ holy_site_volodymyr_effect_name:0 "From [holy_site|E] #weak ($holy_site_volodymyr_name$)#!"
+ holy_site_polotsk_name:0 "Polotsk"
+ holy_site_polotsk_effect_name:0 "From [holy_site|E] #weak ($holy_site_polotsk_name$)#!"
+ holy_site_kiev_name:0 "Kiev"
+ holy_site_kiev_effect_name:0 "From [holy_site|E] #weak ($holy_site_kiev_name$)#!"
+
+
+#Insular
+ holy_site_doudleby_name:0 "Doudleby"
+ holy_site_doudleby_effect_name:0 "From [holy_site|E] #weak ($holy_site_doudleby_name$)#!"
+ holy_site_desmond_name:0 "Desmond"
+ holy_site_desmond_effect_name:0 "From [holy_site|E] #weak ($holy_site_desmond_name$)#!"
+ holy_site_connacht_name:0 "Connacht"
+ holy_site_connacht_effect_name:0 "From [holy_site|E] #weak ($holy_site_connacht_name$)#!"
+ holy_site_ardmore_name:0 "Ardmore"
+ holy_site_ardmore_effect_name:0 "From [holy_site|E] #weak ($holy_site_ardmore_name$)#!"
+ holy_site_vestisland_name:0 "Vestisland"
+ holy_site_vestisland_effect_name:0 "From [holy_site|E] #weak ($holy_site_vestisland_name$)#!"

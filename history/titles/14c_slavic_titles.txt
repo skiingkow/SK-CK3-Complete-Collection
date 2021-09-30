@@ -1,0 +1,19 @@
+# k_slavic_pope = {
+
+# 	863.4.17 = {
+# 		holder = pole00001
+# 	}
+# }
+
+
+
+
+
+
+
+# k_jadwigan_pope = {
+
+# 	863.4.17 = {
+# 		holder = 82327
+# 	}
+# }

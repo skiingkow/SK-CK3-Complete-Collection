@@ -1,0 +1,4 @@
+﻿# building_requirement_road = {
+# 	limit = { has_holding_type = church_holding }
+# 		has_building_or_higher = road_$LEVEL$
+# }

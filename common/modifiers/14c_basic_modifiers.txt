@@ -1,0 +1,51 @@
+﻿#basic mods
+
+learning_modifier_with_offset = {
+	monthly_lifestyle_xp_gain_mult = 0.02
+	cultural_head_fascination_mult = 0.01
+	advantage = 0.25
+}
+intrigue_modifier_with_offset = {
+	dread_baseline_add = 1
+}
+
+diplomacy_modifier_with_offset = {
+	feudal_government_tax_contribution_add = 0.01
+	monthly_prestige_gain_mult = 0.01
+}
+
+stewardship_modifier_with_offset = {
+	domain_tax_mult = 0.02
+	republic_government_tax_contribution_add = 0.01
+}
+#difficulty mods
+
+hard_difficulty_modifier = {
+	icon = dread_positive
+	health = 1
+	tyranny_gain_mult = -0.5
+	fertility = 0.5
+	stress_gain_mult = -0.5
+	short_reign_duration_mult = -0.5
+	vassal_opinion = 25
+	hostile_scheme_resistance_add = 20
+	martial = 5
+	stewardship = 5
+	intrigue = 5
+	diplomacy = 5
+	learning = 5
+	monthly_prestige_gain_mult = 0.5
+	levy_size = 0.5
+	men_at_arms_limit = 3
+	men_at_arms_maintenance = -0.5
+	domain_tax_mult = 0.5
+	domain_limit = 3
+}
+
+established_kiev_dynasty_modifier = {
+	icon = diplomacy_positive
+	monthly_prestige = 0.5
+	men_at_arms_cap = 1
+	knight_limit = 1
+	domain_limit = 1
+}

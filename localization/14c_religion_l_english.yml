@@ -1,0 +1,149 @@
+﻿l_english:
+
+ minervan:0 "Order of Minerva"
+ minervan_adj:0 "Minervan"
+ minervan_adherent:0 "Minervist"
+ minervan_adherent_plural:0 "Minervists"
+ minervan_desc:0 "'Roma Diu Vivere'; Guilded by Minerva, the remnants of Rome fled across desert and ocean, finding solace in fertile lands...A place to restart, rebuild, and restore. Adopting local customs, stories, and practices, the Romans of the Dravidian Coasts have evolved their faith and culture to better reflect their new home."
+
+ minervan_high_god_name:0 "Minerva"
+ minervan_high_god_name_possessive:0 "Minerva's"
+ minervan_high_god_name_alternate:0 "Wisdom"
+ minervan_high_god_name_alternate_possessive:0 "Wisdom's"
+ minervan_witchgodname:0 "Minerva"
+
+ minervan_religious_head_title:0 "Deorum Oraculo"
+ minervan_religious_head_title_name:0 "Magisterium"
+
+
+#modifiers
+
+ bhakti_minervan_generic_zeus:0 "Devotee of Zeus"
+ bhakti_minervan_generic_zeus_desc:0 "King; Proud, Feared."
+ bhakti_minervan_generic_poseidon:0 "Devotee of Poseidon"
+ bhakti_minervan_generic_poseidon_desc:0 "Strong as the Sea; Tamer of Waves."
+ bhakti_minervan_generic_hades:0 "Devotee of Hades"
+ bhakti_minervan_generic_hades_desc:0 "Friend of Death and Taxes."
+ bhakti_minervan_generic_minerva:0 "Devotee of Minerva"
+ bhakti_minervan_generic_minerva_desc:0 "Champion of Wisdom and Professions."
+ bhakti_minervan_generic_bacchus:0 "Devotee of Bacchus"
+ bhakti_minervan_generic_bacchus_desc:0 "Knows where the Party's at!!"
+ bhakti_minervan_generic_mars:0 "Devotee of Mars"
+ bhakti_minervan_generic_mars_desc:0 "War, Conquest, Glory."
+
+
+#decisions
+
+ minervan_decision.0001.t:0 "Deciding on a Deity"
+ minervan_decision.0001.desc:0 "[ROOT.Char.GetFaith.PantheonTerm|U] are many and inscrutable, yet I cannot say that there are not some who hold a level of special appeal for me. Were I to dedicate myself openly to the express worship of primarily one such deity, I would doubtless draw like-minded souls to my side.\n\nWhatever the blessings my patron provides, being with similar [ROOT.Char.GetFaith.GetAdherentNamePluralNoTooltip] can only bring me health, wealth, and glory."
+ minervan_decision.0001.zeus:0 "Zeus, King of Gods!"
+ minervan_decision.0001.poseidon:0 "Poseidon, God of the Seas!"
+ minervan_decision.0001.hades:0 "Hades, God of Wealth and Death!"
+ minervan_decision.0001.minerva:0 "Minerva, Goddess of Wisdom and Professions!"
+ minervan_decision.0001.bacchus:0 "Bacchus, God of Wine and Fertility!"
+ minervan_decision.0001.mars:0 "Mars, God of War!"
+ minervan_decision.0001.optout:0 "$religious_decision.0101.flavor$"
+ minervan_decision.0001.flavor:0 "$religious_decision.0101.flavor$"
+
+
+
+#decisions
+ select_personal_deity_minervan_decision:0 "Determine Personal Deity"
+ select_personal_deity_minervan_decision_tooltip:0 "Think about [ROOT.Char.GetFaith.PantheonTerm]"
+ select_personal_deity_minervan_decision_desc:1 "#F It is not uncommon for [ROOT.Char.GetFaith.GetAdherentNamePluralNoTooltip] to single out one amongst [ROOT.Char.GetFaith.PantheonTerm] who suits their particular tastes and aims in life for special attention.\n\nI should contemplate these divine beings and decide which one calls to me the most.#!"
+ select_personal_deity_minervan_decision_confirm:0 "Dedicate your Worship to a particular God"
+ select_personal_deity_minervan_decision_tt:1 "You begin to live your life according to the values of"
+ select_personal_deity_minervan_decision.select_zeus:0 "Zues, Supplicants know no other names"
+ select_personal_deity_minervan_decision.select_poseidon:0 "Poseidon, Tamer of the Sea"
+ select_personal_deity_minervan_decision.select_hades:0 "Hades, All within the Earth is his"
+ select_personal_deity_minervan_decision.select_minerva:0 "Minevera, Skill and Wit"
+ select_personal_deity_minervan_decision.select_bacchus:0 "Bacchus, Center of the Party"
+ select_personal_deity_minervan_decision.select_mars:0 "Mars, Conquest through bloodshed"
+
+
+
+#Christianity mods
+
+
+
+ #Common Christian Localization
+ #Slavic Church
+ slavic_christianity_religion:0 "Christianity"
+ slavic_christianity_religion_adj:0 "Christian"
+ slavic_christianity_religion_adherent:0 "Christian"
+ slavic_christianity_religion_adherent_plural:0 "Christians"
+ slavic_christianity_religion_desc:0 "Focused on the life and teachings of Jesus of Nazareth, Christianity revolves around the concept of salvation, in which adherents are forgiven for their sins and welcomed by God into the afterlife."
+
+
+ #Slavic Church
+
+ slavic_catholic:0 "Slavic Orthodoxy"
+ slavic_catholic_adj:0 "Slavic"
+ slavic_catholic_adherent:0 "Slavic"
+ slavic_catholic_adherent_plural:0 "Slavic"
+ slavic_catholic_desc:0 "The Slavic Church combines elements of Catholicism, Orthodoxy and Slavic culture and mythology. It claims that Jesus bestowed the Keys of the Kingdom of Heaven upon St. Peter and that, as his rightful successor, the Pope is therefore the supreme spiritual authority of the entire Christian world. They reject the Roman Pope as a pretender brought about by Satan himself."
+ 
+ #Jadwigan
+ 
+ jadwigan:0 "Order of St. Adalbert"
+ jadwigan_adj:0 "Catholic"
+ jadwigan_adherent:0 "Catholic"
+ jadwigan_adherent_plural:0 "Catholics"
+ jadwigan_desc:0 "Followers of Christ and the Catholic Church, the Order of St. Adalbert promote the ideas of Catholicism upon a emerging nation, promoting strong Polish Identity and a loyalty to the Catholic Church."
+ 
+ #Symbols 
+
+ christianity_religious_symbol:0 "cross"
+ christianity_religious_text:0 "scriptures"
+
+
+ #Slavic Devotees
+
+ slavic_catholic_house_of_worship:0 "temple"
+ slavic_catholic_house_of_worship_plural:0 "temples"
+ slavic_catholic_devotee:0 "devotee"
+ slavic_catholic_devoteeplural:0 "devotees"
+ slavic_catholic_priest_male:0 "zhrets"
+ slavic_catholic_priest_male_plural:0 "zhretsy"
+ slavic_catholic_priest_female:0 "zhritsa "
+ slavic_catholic_priest_female_plural:0 "zhritsi"
+ slavic_catholic_bishop_male:0 "volkhv"
+ slavic_catholic_bishop_male_plural:0 "volkhvi"
+ slavic_catholic_bishop_female:0 "vedunya"
+ slavic_catholic_bishop_female_plural:0 "veduny"
+ slavic_catholic_priest_alternate_plural:0 "veche"
+
+ #Slavic Gods
+ slavic_catholic_devil_name:0 "Chernobog"
+ slavic_catholic_devil_name_possessive:0 "Chernobog's"
+ slavic_catholic_health_god_name:0 "Zhibog"
+ slavic_catholic_health_god_name_possessive:0 "Zhibog's"
+ slavic_catholic_fertility_god_name:0 "Devana"
+ slavic_catholic_fertility_god_name_possessive:0 "Devana's"
+ slavic_catholic_wealth_god_name:0 "Dazhbog"
+ slavic_catholic_wealth_god_name_possessive:0 "Dazhbog's"
+ slavic_catholic_household_god_name:0 "Rozanica"
+ slavic_catholic_household_god_name_possessive:0 "Rozanica's"
+ slavic_catholic_fate_god_name:0 "Sud"
+ slavic_catholic_fate_god_name_possessive:0 "Sud's"
+ slavic_catholic_knowledge_god_name:0 "Woda"
+ slavic_catholic_knowledge_god_name_possessive:0 "Woda's"
+ slavic_catholic_war_god_name:0 "Perun"
+ slavic_catholic_war_god_name_possessive:0 "Perun's"
+ slavic_catholic_trickster_god_name:0 "$slavic_catholic_devil_name$"
+ slavic_catholic_trickster_god_name_possessive:0 "$slavic_catholic_devil_name_possessive$"
+ slavic_catholic_night_god_name:0 "Xors Jutrobog"
+ slavic_catholic_night_god_name_possessive:0 "Xors Jutrobog's"
+ slavic_catholic_water_god_name:0 "Kupala"
+ slavic_catholic_water_god_name_possessive:0 "Kupala's"
+
+ #Christian Gods
+ christianity_high_god_name:0 "God"
+ christianity_high_god_name_possessive:0 "God's"
+ christianity_high_god_name_alternate:0 "The Lord"
+ christianity_high_god_name_alternate_possessive:0 "The Lord's"
+
+ special_doctrine_slavic_christian_name:0 "Slavicism"
+ special_doctrine_slavic_christian_desc:0 "Our religious leaders have historically been engaged in inter-faith dialogs to increase cooperation amongst the different Christian Slavic denominations."
+
+ doctrine_parameter_hostility_override_special_doctrine_slavic_christian:1 "Other [faiths|E] that have the Slavicism doctrine are considered [GetHostilityLevelName( FAITH_DOCTRINE_PARAMETER.GetIntValue )|V] instead of $hostility_hostile_tooltippable$"

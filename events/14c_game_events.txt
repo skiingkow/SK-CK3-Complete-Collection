@@ -1,0 +1,36 @@
+﻿namespace = hm_hard
+
+hm_hard.0001 = {
+	type = character_event
+
+	trigger = { has_game_rule = hard_difficulty }
+
+	immediate = { 
+		every_independent_ruler = {
+			if = { 
+				limit = { 
+					highest_held_title_tier >= tier_county
+					is_ai = yes
+					NOT = { has_modifier = hard_difficulty_modifier }
+				}
+				add_character_modifier = hard_difficulty_modifier
+			}
+		}
+	}
+}
+
+hm_hard.0002 = { #work around if for some reason the player gets hard mode modifier
+	type = character_event
+
+	immediate = {
+		every_independent_ruler = {
+			if = {
+				limit = {
+					is_ai = no
+				}
+				remove_character_modifier = hard_difficulty_modifier
+			}
+		}
+	}
+
+}

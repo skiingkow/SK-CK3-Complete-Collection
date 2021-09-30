@@ -1,0 +1,43 @@
+﻿bhakti_minervan_generic_zeus = {	# god of thunder, king of olympus.
+	icon = magic_positive
+	monthly_dynasty_prestige = 0.2
+	monthly_prestige_gain_mult = 0.2 
+	dread_baseline_add = 15
+	levy_size = 0.1
+}
+bhakti_minervan_generic_poseidon = {	# god of the seas.
+	icon = diplomacy_positive
+	diplomacy = 3
+	naval_movement_speed_mult = 0.3
+	embarkation_cost_mult = -0.3
+	no_water_crossing_penalty = yes
+}
+bhakti_minervan_generic_hades = {	# god of rare metals and death.
+	icon = economy_positive
+	health = 0.5
+	stewardship = 2
+	domain_tax_mult = 0.2
+	hostile_scheme_power_mult = 0.2
+}
+bhakti_minervan_generic_minerva = {	# god of wisdom and professions.
+	icon = learning_positive
+	learning = 3
+	stewardship = 3
+	development_growth_factor = 0.2
+	tyranny_gain_mult = -0.3
+}
+bhakti_minervan_generic_bacchus = {	# god of a good time.
+	icon = feast_positive
+	general_opinion = 10
+	fertility = 0.3
+	stress_gain_mult = -0.5
+	stress_loss_mult = 0.5
+}
+bhakti_minervan_generic_mars = {	# god of war.
+	icon = martial_positive
+	advantage = 5
+	martial = 5
+	prowess = 5
+	men_at_arms_maintenance = -0.2
+}
+

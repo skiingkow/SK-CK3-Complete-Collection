@@ -1,0 +1,9 @@
+﻿chancellor_integrate_title_progress_gain = {
+	add = diplomacy
+	multiply = 0.2
+}
+
+steward_promote_culture_monthly_increase = {
+	add = stewardship
+	divide = 3
+}

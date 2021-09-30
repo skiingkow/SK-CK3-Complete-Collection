@@ -1,0 +1,46 @@
+﻿on_title_gain = {
+	effect = {
+		if = {
+			limit = {
+				scope:title = { is_holy_order = yes }
+				NOT = { has_trait = order_member }
+				has_government = holy_order_government
+			}
+			add_trait = order_member
+		}
+
+		#Did I receive a title from my sibling?
+		if = {
+			limit = {
+				exists = scope:previous_holder
+				scope:previous_holder = {
+					is_alive = yes
+					exists = var:sibling_waiting_for_land
+					any_sibling = {
+						this = root
+						this = scope:previous_holder.var:sibling_waiting_for_land
+					}
+				}
+			}
+			add_character_flag = {
+				flag = got_title_from_sibling
+				years = 4
+			}
+		}
+	}
+	events = {
+		roman_restoration.0005		#New Roman Emperor gets Augustus trait. (old holder, if still alive, loses it)
+		roman_restoration.0199		#Restoring the Pentarchy.
+		religious_decision.0312		# Base game: new holder of a county with a runestone
+		fp1_other_decisions.0113	# FP1: new holder of a county with a runestone
+		coa.1						# check if title Coat of Arms should change.
+		hm_hard.0001				#assigns newly annointed title holding ai hard mode buffs
+		south_asia.0005				#New Chakravarti gets trait. (old holder loses it if still alive)
+		delay = { days = 1 }
+		realm_maintenance.2001		#Big notification about inheriting emperor tier title
+		british_isles.1032			# Danelaw-England partition calc.
+		fp1_major_decisions.1011	# Harald Tanglehair becomes Harald Fairhair.
+		fp1_major_decisions.1012	# If Norway has just been created for the first time, flag that.
+		hm_hard.0002				# if for some reason the player would be given the hard mode buff, this should counter it
+	}
+}

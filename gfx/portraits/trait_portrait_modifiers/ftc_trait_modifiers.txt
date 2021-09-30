@@ -1,0 +1,25 @@
+﻿height_genetic_conditions = {
+	dwarfism = {
+		traits = { dwarf }
+		dna_modifiers = {
+			morph = {
+				mode = modify
+				gene = gene_height
+				template = dwarf_height
+				value = 0
+			}
+		}
+	}
+
+	gigantism = {
+		traits = { giant }
+		dna_modifiers = {
+			morph = {
+				mode = modify_multiply
+				gene = gene_height
+				template = giant_height
+				value = 0
+			}
+		}
+	}
+}

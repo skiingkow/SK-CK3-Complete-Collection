@@ -1,0 +1,78 @@
+﻿namespace = minervan_decision
+
+
+minervan_decision.0001 = {
+	type = character_event
+	title = minervan_decision.0001.t
+	desc = minervan_decision.0001.desc
+	theme = faith
+	left_portrait = {
+		character = root
+		animation = personality_rational
+	}
+
+	# zeus
+	option = {
+		name = minervan_decision.0001.zeus
+		trigger = {
+			NOT = { has_character_modifier = bhakti_minervan_generic_zeus }
+		}
+		set_bhakti_effect = { BHAKTI = bhakti_minervan_generic_zeus }
+	}
+
+	# poseidon
+	option = {
+		name = minervan_decision.0001.poseidon
+		trigger = {
+			NOT = { has_character_modifier = bhakti_minervan_generic_poseidon }
+		}
+		set_bhakti_effect = { BHAKTI = bhakti_minervan_generic_poseidon }
+	}
+
+	# hades
+	option = {
+		name = minervan_decision.0001.hades
+		trigger = {
+			NOT = { has_character_modifier = bhakti_minervan_generic_hades }
+		}
+		set_bhakti_effect = { BHAKTI = bhakti_minervan_generic_hades }
+	}
+
+	# minerva
+	option = {
+		name = minervan_decision.0001.minerva
+		trigger = {
+			NOT = { has_character_modifier = bhakti_minervan_generic_minerva }
+		}
+		set_bhakti_effect = { BHAKTI = bhakti_minervan_generic_minerva }
+	}
+
+	# Bacchus
+	option = {
+		name = minervan_decision.0001.bacchus
+		trigger = {
+			NOT = { has_character_modifier = bhakti_minervan_generic_bacchus }
+		}
+		set_bhakti_effect = { BHAKTI = bhakti_minervan_generic_bacchus }
+	}
+
+	# Mars
+	option = {
+		name = minervan_decision.0001.mars
+		trigger = {
+			NOT = { has_character_modifier = bhakti_minervan_generic_mars }
+		}
+		set_bhakti_effect = { BHAKTI = bhakti_minervan_generic_mars }
+	}
+
+
+	# Opt-Out
+	option = {
+		name = minervan_decision.0001.optout
+		flavor = minervan_decision.0001.flavor
+
+		ai_chance = {
+			base = 0
+		}		
+	}
+}

@@ -1,0 +1,83 @@
+﻿@special_maa_01 = "gfx/interface/icons/culture_innovations/innovation_special_maa_01.dds"
+@special_maa_02 = "gfx/interface/icons/culture_innovations/innovation_special_maa_02.dds"
+
+
+innovation_khandayats = {
+	group = culture_group_regional
+	culture_era = culture_era_early_medieval
+	icon = @special_maa_01
+
+	potential = {
+		OR = {
+			#Indo-Aryan
+			this = culture:bengali
+			this = culture:oriya
+			this = culture:assamese
+			this = culture:hindustani
+			this = culture:gujarati
+			this = culture:punjabi
+			this = culture:rajput
+			this = culture:sindhi
+			this = culture:marathi
+			this = culture:sinhala
+			this = culture:nepali
+			this = culture:kashmiri
+			
+			#Indo-Romanus
+			this = culture:romanus
+
+			#Dravidian
+			this = culture:tamil
+			this = culture:telugu
+			this = culture:kannada
+		}
+	}
+
+	unlock_maa = khandayat
+
+	flag = global_maa
+}
+
+innovation_legionnaires = {
+	group = culture_group_regional
+	culture_era = culture_era_late_medieval
+	icon = @special_maa_02
+
+	potential = {
+		this = culture:roman
+		this = culture:romanus
+		this = culture:afro_roman
+	}
+
+	unlock_maa = praetorian
+
+	flag = global_maa
+}
+
+innovation_sahel_horsemen = {
+	group = culture_group_regional
+	culture_era = culture_era_tribal
+	icon = @special_maa_01
+
+	potential = {
+		OR = {
+			#Sahel Cultures
+			this.culture_group = culture_group:sahelian_group
+			this.culture_group = culture_group:senegambian_group
+			this.culture_group = culture_group:central_african_group
+			this = culture:daju
+			this = culture:zaghawa
+			this = culture:pulaar
+			this = culture:afro_roman
+		}
+		NOR = {
+			#Cultures with other MaAs
+			#this = culture:bozo
+			#this = culture:sorko
+		}
+	}
+
+	unlock_maa = sahel_horsemen
+
+	flag = global_maa
+}

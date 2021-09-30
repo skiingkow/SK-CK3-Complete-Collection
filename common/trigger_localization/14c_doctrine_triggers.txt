@@ -1,0 +1,4 @@
+﻿doctrine_incompatible_trigger = {
+	first_not = INCOMPATIBLE_TENET_TRIGGER
+	third_not = INCOMPATIBLE_TENET_TRIGGER
+}

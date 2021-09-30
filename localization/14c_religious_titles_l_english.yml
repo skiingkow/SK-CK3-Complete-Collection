@@ -1,0 +1,28 @@
+﻿l_english:
+#Main Religious title
+ k_minervan_article:0 "the "
+ k_minervan:0 "Magisterium"
+ k_minervan_adj:0 "Magisterial"
+#Spouse and children
+ prince_male_minervan_kingdom:0 "Puer de Divinus"
+ prince_female_minervan_kingdom:0 "Puella de Divinus"
+ queen_minervan_kingdom:0 "Vivificantern"
+#  prince_male_minervan_empire:0 "Caesar"
+#  prince_female_minervan_empire:0 "Caesarissa"
+#  queen_minervan_empire:0 "Caesarissa"
+ k_slavic_pope:0 "Papiestwo"
+ k_slavic_pope_adj:0 "Papieski"
+
+ k_jadwigan_pope:0 "Papiestwo"
+ k_jadwigan_pope_adj:0 "Papieski"
+
+ slavic_catholic_religious_head_title:0 "Papież"
+
+#  k_papal_state:0 "Pope"
+
+ pope:0 "Pope"
+#  slavic_catholic_religious_head_title_female:0 "Matka Przełożona"
+#  slavic_catholic_religious_head_title_name:0 "Slavic Papiestwo"
+#  jadwigan_religious_head_title:0 "Papieżo"
+#  jadwigan_religious_head_title_female:0 "Matka Przełożona"
+#  jadwigan_religious_head_title_name:0 "Jadwigan Papiestwo"

@@ -1,0 +1,450 @@
+﻿pole00001 = {
+	name = "Bazyli"
+	female = no
+	faith = jadwigan
+	culture = polish
+	
+	960.1.1 = {
+		birth = "960.1.1"
+	}
+
+	1020.1.1 = {
+		death = "1020.1.1"
+	}
+}
+
+pole00002 = {
+	name = "Bartosz"
+	female = no
+	faith = jadwigan
+	culture = polish
+
+	960.1.1 = {
+		birth = "960.1.1"
+	}
+
+	1020.1.1 = {
+		death = "1020.1.1"
+	}
+}
+
+pole00003 = {
+	name = "Juliusz"
+	female = no
+	faith = jadwigan
+	culture = polish
+
+	960.1.1 = {
+		birth = "960.1.1"
+	}
+
+	1020.1.1 = {
+		death = "1020.1.1"
+	}
+}
+
+pole00004 = {
+	name = "Arkady"
+	female = no
+	faith = jadwigan
+	culture = polish
+
+	960.1.1 = {
+		birth = "960.1.1"
+	}
+
+	1020.1.1 = {
+		death = "1020.1.1"
+	}
+}
+
+pole00005 = {
+	name = "Geralt"
+	female = no
+	faith = jadwigan
+	culture = polish
+
+	960.1.1 = {
+		birth = "960.1.1"
+	}
+
+	1020.1.1 = {
+		death = "1020.1.1"
+	}
+}
+
+pole00006 = {
+	name = "Chwalibóg"
+	female = no
+	faith = jadwigan
+	culture = polish
+
+	960.1.1 = {
+		birth = "960.1.1"
+	}
+
+	1020.1.1 = {
+		death = "1020.1.1"
+	}
+}
+
+pole00007 = {
+	name = "Czesław"
+	female = no
+	faith = jadwigan
+	culture = polish
+
+	960.1.1 = {
+		birth = "960.1.1"
+	}
+
+	1020.1.1 = {
+		death = "1020.1.1"
+	}
+}
+
+pole00008 = {
+	name = "Eugeniusz"
+	female = no
+	faith = jadwigan
+	culture = polish
+
+	960.1.1 = {
+		birth = "960.1.1"
+	}
+
+	1020.1.1 = {
+		death = "1020.1.1"
+	}
+}
+
+pole00009 = {
+	name = "Iwan"
+	female = no
+	faith = jadwigan
+	culture = polish
+
+	960.1.1 = {
+		birth = "960.1.1"
+	}
+
+	1020.1.1 = {
+		death = "1020.1.1"
+	}
+}
+
+pole00010 = {
+	name = "Grzegorz"
+	female = no
+	faith = jadwigan
+	culture = polish
+
+	960.1.1 = {
+		birth = "960.1.1"
+	}
+
+	1020.1.1 = {
+		death = "1020.1.1"
+	}
+}
+
+pole00011 = {
+	name = "Franciszek"
+	female = no
+	faith = jadwigan
+	culture = polish
+
+	960.1.1 = {
+		birth = "960.1.1"
+	}
+
+	1020.1.1 = {
+		death = "1020.1.1"
+	}
+}
+
+pole00012 = {
+	name = "Ludomir"
+	female = no
+	faith = jadwigan
+	culture = polish
+
+	960.1.1 = {
+		birth = "960.1.1"
+	}
+
+	1020.1.1 = {
+		death = "1020.1.1"
+	}
+}
+
+pole00013 = {
+	name = "Adrian"
+	female = no
+	faith = jadwigan
+	culture = polish
+
+	960.1.1 = {
+		birth = "960.1.1"
+	}
+
+	1020.1.1 = {
+		death = "1020.1.1"
+	}
+}
+
+pole00014 = {
+	name = "Konstantyn"
+	female = no
+	faith = jadwigan
+	culture = polish
+
+	960.1.1 = {
+		birth = "960.1.1"
+	}
+
+	1020.1.1 = {
+		death = "1020.1.1"
+	}
+}
+
+pole00015 = {
+	name = "Lucjan"
+	female = no
+	faith = jadwigan
+	culture = polish
+
+	960.1.1 = {
+		birth = "960.1.1"
+	}
+
+	1020.1.1 = {
+		death = "1020.1.1"
+	}
+}
+
+pole00016 = {
+	name = "Apoloniusz"
+	female = no
+	faith = jadwigan
+	culture = polish
+
+	960.1.1 = {
+		birth = "960.1.1"
+	}
+
+	1020.1.1 = {
+		death = "1020.1.1"
+	}
+}
+
+pole00018 = {
+	name = "Tobiasz"
+	female = no
+	faith = jadwigan
+	culture = polish
+
+	960.1.1 = {
+		birth = "960.1.1"
+	}
+
+	1020.1.1 = {
+		death = "1020.1.1"
+	}
+}
+
+pole00019 = {
+	name = "Klemens"
+	female = no
+	faith = jadwigan
+	culture = polish
+
+	960.1.1 = {
+		birth = "960.1.1"
+	}
+
+	1020.1.1 = {
+		death = "1020.1.1"
+	}
+}
+
+pole00020 = {
+	name = "Władysław"
+	female = no
+	faith = jadwigan
+	culture = polish
+
+	960.1.1 = {
+		birth = "960.1.1"
+	}
+
+	1020.1.1 = {
+		death = "1020.1.1"
+	}
+}
+
+pole00021 = {
+	name = "Sergiusz"
+	female = no
+	faith = jadwigan
+	culture = polish
+
+	960.1.1 = {
+		birth = "960.1.1"
+	}
+
+	1020.1.1 = {
+		death = "1020.1.1"
+	}
+}
+
+pole00022 = {
+	name = "Tymon"
+	female = no
+	faith = jadwigan
+	culture = polish
+
+	960.1.1 = {
+		birth = "960.1.1"
+	}
+
+	1020.1.1 = {
+		death = "1020.1.1"
+	}
+}
+
+pole00023 = {
+	name = "Lesław"
+	female = no
+	faith = jadwigan
+	culture = polish
+
+	960.1.1 = {
+		birth = "960.1.1"
+	}
+
+	1020.1.1 = {
+		death = "1020.1.1"
+	}
+}
+
+pole00024 = {
+	name = "Sergiusz"
+	female = no
+	faith = jadwigan
+	culture = polish
+
+	960.1.1 = {
+		birth = "960.1.1"
+	}
+
+	1020.1.1 = {
+		death = "1020.1.1"
+	}
+}
+
+pole00025 = {
+	name = "Lechosław"
+	female = no
+	faith = jadwigan
+	culture = polish
+
+	960.1.1 = {
+		birth = "960.1.1"
+	}
+
+	1020.1.1 = {
+		death = "1020.1.1"
+	}
+}
+
+pole00026 = {
+	name = "Kazimierz"
+	female = no
+	faith = jadwigan
+	culture = polish
+
+	960.1.1 = {
+		birth = "960.1.1"
+	}
+
+	1020.1.1 = {
+		death = "1020.1.1"
+	}
+}
+
+pole00027 = {
+	name = "Urban"
+	female = no
+	faith = jadwigan
+	culture = polish
+
+	960.1.1 = {
+		birth = "960.1.1"
+	}
+
+	1020.1.1 = {
+		death = "1020.1.1"
+	}
+}
+
+pole00028 = {
+	name = "Kwaitosław"
+	female = no
+	faith = jadwigan
+	culture = polish
+
+	960.1.1 = {
+		birth = "960.1.1"
+	}
+
+	1020.1.1 = {
+		death = "1020.1.1"
+	}
+}
+
+pole00029 = {
+	name = "Bogdan"
+	female = no
+	faith = jadwigan
+	culture = polish
+
+	960.1.1 = {
+		birth = "960.1.1"
+	}
+
+	1020.1.1 = {
+		death = "1020.1.1"
+	}
+}
+
+pole00030 = {
+	name = "Jakub"
+	female = no
+	faith = jadwigan
+	culture = polish
+
+	960.1.1 = {
+		birth = "960.1.1"
+	}
+
+	1020.1.1 = {
+		death = "1020.1.1"
+	}
+}
+
+pole00031 = {
+	name = "Mateusz"
+	female = no
+	faith = jadwigan
+	culture = polish
+
+	960.1.1 = {
+		birth = "960.1.1"
+	}
+
+	1020.1.1 = {
+		death = "1020.1.1"
+	}
+}
+

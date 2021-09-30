@@ -1,0 +1,354 @@
+﻿albino = {
+	index = 158
+	
+	# inherit_chance = 100
+	# both_parent_has_trait_inherit_chance = 100
+	genetic = yes
+	physical = yes
+    good = yes
+	enables_inbred = no
+
+
+	birth = 1
+	random_creation = 1
+	
+	attraction_opinion = 10
+	vassal_opinion = 10
+	learning = 3
+	diplomacy = 3
+	stewardship = 3
+	monthly_lifestyle_xp_gain_mult = 0.1
+	dread_baseline_add = 10
+
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_albino_desc
+			}
+			desc = trait_albino_character_desc
+		}
+	}
+
+}
+
+
+giant = {
+	opposites = {
+		dwarf
+	}
+
+	index = 216
+	prowess = 6
+	negate_health_penalty_add = 0.5
+
+	# inherit_chance = 25
+	# both_parent_has_trait_inherit_chance = 100
+	genetic = yes
+	physical = yes
+	good = yes
+	enables_inbred = no
+
+
+	birth = 1
+	random_creation = 1
+	
+	# Portrait Modification
+	# dna_modifiers = {
+	#	morph = {
+	#		mode = add
+	#		gene = "height"
+	#		template = "giant_height"
+	#		#value = 0.5
+	#	}
+	# }
+	
+	tribal_government_opinion = 10
+	same_opinion = 20
+
+	dread_baseline_add = 30
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_giant_desc
+			}
+			desc = trait_giant_character_desc
+		}
+	}
+}
+
+
+dwarf = {
+	index = 152
+
+	prowess = 2
+	stewardship = 5
+	build_gold_cost = -0.1
+	build_prestige_cost = -0.1
+	build_speed = -0.1
+	movement_speed = 0.10
+	enables_inbred = no
+
+	opposites = {
+		giant
+	}	
+
+	birth = 1
+	random_creation = 1
+	# both_parent_has_trait_inherit_chance = 100
+	genetic = yes
+	physical = yes
+	good = yes
+
+
+	# Portrait Modification
+	# dna_modifiers = {
+	#	morph = {
+	#		mode = add
+	#		gene = "height"
+	#		template = "dwarf_height"
+	#		#value = -0.75
+	#	}
+	# }
+	
+	same_opinion = 20
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_dwarf_desc
+			}
+			desc = trait_dwarf_character_desc
+		}
+	}
+}
+
+# immortal = {
+# 	index = 278
+	
+# 	fertility = 0.5
+# 	physical = yes
+# 	health = 7
+
+# 	inbreeding_chance = -1
+
+# 	birth = 0.00001
+# 	random_creation = 0
+
+# 	inherit_chance = 100
+# 	both_parent_has_trait_inherit_chance = 100
+# 	genetic = yes
+# 	good = yes
+
+# 	desc = {
+# 		first_valid = {
+# 			triggered_desc = {
+# 				trigger = {
+# 					NOT = { exists = this }
+# 				}
+# 				desc = trait_immortal_desc
+# 			}
+# 			desc = trait_immortal_character_desc
+# 		}
+# 	}
+# }
+
+witch = {
+	index = 226
+	intrigue = 2
+	learning = 2
+	monthly_lifestyle_xp_gain_mult = 0.2
+
+
+	same_opinion = 20
+	
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_witch_desc
+			}
+			desc = trait_witch_character_desc
+		}
+	}
+
+	ai_compassion = very_low_negative_ai_value
+	ai_boldness = very_low_positive_ai_value
+	ai_rationality = very_low_positive_ai_value
+	
+	triggered_opinion = {
+		parameter = witchcraft_illegal
+		opinion_modifier = witchcraft_crime
+		ignore_opinion_value_if_same_trait = yes
+	}
+	triggered_opinion = {
+		parameter = witchcraft_shunned
+		opinion_modifier = witchcraft_intolerant
+		ignore_opinion_value_if_same_trait = yes
+	}
+}
+
+
+
+
+#modify chaste to be slightly less bad
+
+chaste = {
+	index = 58
+	personality = yes
+	opposites = {
+		lustful
+	}
+	
+	learning = 2
+	stewardship = 1
+	
+	same_opinion = 20
+	opposite_opinion = -10
+	attraction_opinion = -20
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_chaste_desc
+			}
+			desc = trait_chaste_character_desc
+		}
+	}
+	
+	ai_honor = low_positive_ai_value
+	ai_greed = low_negative_ai_value
+	ai_energy = very_low_positive_ai_value
+	ai_zeal = very_low_positive_ai_value
+	ai_sociability = low_negative_ai_value
+
+	compatibility = {
+		chaste = @pos_compat_medium
+		celibate = @pos_compat_medium
+		temperate = @pos_compat_low
+		calm = @pos_compat_low
+		lustful = @neg_compat_high
+		deviant = @neg_compat_high
+		lovers_pox = @neg_compat_low
+		early_great_pox = @neg_compat_low
+		great_pox = @neg_compat_low
+		reveler_1 = @neg_compat_low
+		reveler_2 = @neg_compat_low
+		reveler_3 = @neg_compat_low
+		seducer = @neg_compat_low
+	}
+}
+
+#modify forgiving to be less bad
+
+forgiving = {
+	index = 91
+	personality = yes
+	opposites = {
+		vengeful
+	}
+	diplomacy = 2
+	intrigue = -2
+	
+	prisoner_opinion = 15
+	opposite_opinion = -10
+	same_opinion = 10
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_forgiving_desc
+			}
+			desc = trait_forgiving_character_desc
+		}
+	}
+
+	ai_honor = low_positive_ai_value
+	ai_rationality = very_low_positive_ai_value
+	ai_energy = very_low_negative_ai_value
+	ai_vengefulness = dominant_negative_ai_value
+	ai_compassion = medium_positive_ai_value
+
+	compatibility = {
+		forgiving = @pos_compat_high
+		compassionate = @pos_compat_medium
+		honest = @pos_compat_medium
+		generous = @pos_compat_low
+		just = @pos_compat_low
+		trusting = @pos_compat_low
+		gregarious = @pos_compat_low
+		calm = @pos_compat_low
+		patient = @pos_compat_low
+		vengeful = @neg_compat_high
+		callous = @neg_compat_medium
+		sadistic = @neg_compat_medium
+		deceitful = @neg_compat_medium
+		arbitrary = @neg_compat_low
+		paranoid = @neg_compat_low
+		wrathful = @neg_compat_low
+	}
+}
+
+paragon = {
+	index = 248
+	fame = yes
+
+	clergy_opinion = 20
+	
+	shown_in_ruler_designer = no
+	
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_paragon_desc
+			}
+			desc = trait_paragon_character_desc
+		}
+	}
+
+	ai_zeal = 20
+}
+
+consecrated_blood = {
+	index = 249
+	fame = yes
+
+	clergy_opinion = 10
+	
+	shown_in_ruler_designer = no
+	
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_consecrated_blood_desc
+			}
+			desc = trait_consecrated_blood_character_desc
+		}
+	}
+
+	ai_zeal = 10
+}

@@ -1,0 +1,1 @@
+This file holds a collection of mods for the base game of CK3 deisgned to add more functionality, objectives, cultural significant history, as well as gameplay improvements and features.
